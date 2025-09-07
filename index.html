@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dricamodapet - Moda Pet com Estilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Avatar de Cachorro Animado -->
+    <div class="dog-avatar" id="dogAvatar">
+        <div class="dog-body">
+            <div class="dog-head">
+                <div class="dog-ear left-ear"></div>
+                <div class="dog-ear right-ear"></div>
+                <div class="dog-face">
+                    <div class="dog-eye left-eye">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="dog-eye right-eye">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="dog-nose"></div>
+                    <div class="dog-mouth"></div>
+                </div>
+            </div>
+            <div class="dog-tail"></div>
+        </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                   <img src="images/Logo da DRIKAMODAPET com Cachorro.png" width="300" height="200" alt="Logo Dricamodapet">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#promocoes" class="nav-link">Promoções</a></li>
+                    <li><a href="#nossa-empresa" class="nav-link">Nossa Empresa</a></li>
+                    <li><a href="#contatos" class="nav-link">Contatos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section com Carrossel -->
+    <section id="home" class="hero">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/u4GFWedR5BrS.jpg"  alt="Roupas Pet Elegantes">
+                <div class="slide-content">
+                    <h2>Roupas Pet de Alta Qualidade</h2>
+                    <p>Conforto e estilo para seu melhor amigo</p>
+                    <button class="cta-button">Ver Produtos</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/0jwatVKIG3in.png" alt="Moda Pet Moderna">
+                <div class="slide-content">
+                    <h2>Design Moderno e Confortável</h2>
+                    <p>Peças exclusivas para pets especiais</p>
+                    <button class="cta-button">Conheça Nossa Coleção</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/8ubvEFx51t3x.png" alt="Estilo Pet">
+                <div class="slide-content">
+                    <h2>Estilo e Proteção</h2>
+                    <p>Roupas que combinam moda e funcionalidade</p>
+                    <button class="cta-button">Saiba Mais</button>
+                </div>
+            </div>
+            
+            <!-- Controles do Carrossel -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato Rápido -->
+    <section class="quick-contact">
+        <div class="container">
+            <h3>Entre em Contato</h3>
+            <div class="contact-buttons">
+                <a href="https://wa.me/5511999999999" class="contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="https://instagram.com/dricamodapet" class="contact-btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="https://facebook.com/dricamodapet" class="contact-btn facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="quem-somos" class="about">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Dricamodapet nasceu do amor pelos pets e da paixão pela moda. Criamos roupas exclusivas que combinam conforto, qualidade e muito estilo para seu melhor amigo.</p>
+                    <p>Cada peça é pensada com carinho, utilizando materiais de alta qualidade e designs únicos que respeitam o bem-estar e a personalidade de cada pet.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/9ljp7ulVpM5C.jpg" alt="Sobre a Dricamodapet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/XpJnC568J62S.jpg" alt="Moletom Pet">
+                    <div class="product-info">
+                        <h3>Moletons Estilosos</h3>
+                        <p>Conforto e aquecimento para os dias frios</p>
+                        <span class="price">A partir de R$ 45,00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/ufRQHCXY9gyk.jpg" alt="Roupa Elegante">
+                    <div class="product-info">
+                        <h3>Roupas Elegantes</h3>
+                        <p>Para ocasiões especiais</p>
+                        <span class="price">A partir de R$ 65,00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/t0STj1IO2kPx.jpg" alt="Acessórios">
+                    <div class="product-info">
+                        <h3>Acessórios Únicos</h3>
+                        <p>Detalhes que fazem a diferença</p>
+                        <span class="price">A partir de R$ 25,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Comentários -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial active">
+                    <p>"Minha cachorrinha fica linda com as roupinhas da Dricamodapet! Qualidade excepcional!"</p>
+                    <span>- Maria Silva</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Atendimento maravilhoso e produtos de primeira qualidade. Super recomendo!"</p>
+                    <span>- João Santos</span>
+                </div>
+                <div class="testimonial">
+                    <p>"As roupas são lindas e meu pet fica super confortável. Parabéns pelo trabalho!"</p>
+                    <span>- Ana Costa</span>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentTestimonial(1)"></span>
+                <span class="dot" onclick="currentTestimonial(2)"></span>
+                <span class="dot" onclick="currentTestimonial(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dricamodapet</h3>
+                    <p>Moda pet com qualidade e estilo para seu melhor amigo.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@dricamodapet.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dricamodapet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
